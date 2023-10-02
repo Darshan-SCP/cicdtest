@@ -16,6 +16,7 @@ modules:
     path: gen/srv
     parameters:
       buildpack: nodejs_buildpack
+      memory: 256M
     build-parameters:
       builder: npm
     provides:
@@ -30,6 +31,7 @@ modules:
     path: gen/db
     parameters:
       buildpack: nodejs_buildpack
+      memory: 256M
     requires:
       - name: cicdtes-db
 
