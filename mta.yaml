@@ -9,7 +9,6 @@ build-parameters:
     - builder: custom
       commands:
         - npm install
-        - npm run build:cf
         - npx cds build --production
 modules:
   - name: cicdtes-srv
